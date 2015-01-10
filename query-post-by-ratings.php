@@ -45,8 +45,11 @@
 	$html .= '<br />';
 
 	
-	arsort($post_rates);
-
+	arsort($post_rates); //descending order, according to the value
+	//asort($post_rates);	 //ascending order, according to the value
+	
+	
+	
 	foreach($post_rates as $key => $value)
 		{
 			$post = get_post($key);
